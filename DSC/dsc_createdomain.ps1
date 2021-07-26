@@ -122,12 +122,5 @@
 	        DependsOn = '[WindowsFeature]ADDSInstall',"[xDisk]ADDataDisk"
         } 
 
-        xADRecycleBin RecycleBin            
-        {            
-           EnterpriseAdministratorCredential = $DomainCreds            
-           ForestFQDN = $DomainName            
-           DependsOn = '[xADDomain]FirstDS'            
-        }   
-
    }
 } 
